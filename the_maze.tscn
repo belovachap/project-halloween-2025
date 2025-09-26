@@ -10,7 +10,7 @@ ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 sky_material = SubResource("ProceduralSkyMaterial_o6y5j")
 
 [sub_resource type="Environment" id="Environment_vgtbh"]
-background_mode = 2
+background_mode = 1
 sky = SubResource("Sky_5eyc2")
 tonemap_mode = 2
 glow_enabled = true
@@ -20,43 +20,52 @@ glow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_vgtbh")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 15.4342, 0)
-shadow_enabled = true
-
 [node name="ProtoController" parent="." instance=ExtResource("1_ec1n3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.02384, 0.411391, 2.97795)
 
 [node name="Areas" type="Node3D" parent="."]
 
-[node name="StartingCell" type="Node3D" parent="Areas"]
+[node name="TheCells" type="Node3D" parent="Areas"]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Areas/StartingCell"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 0, -0.318535)
+[node name="StartingCell" type="Node3D" parent="Areas/TheCells"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Areas/TheCells/StartingCell"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 0, -0.891552)
 use_collision = true
-size = Vector3(9.78666, 1, 8.8759)
+size = Vector3(9.78666, 1, 10.0219)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="Areas/StartingCell"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 6.74151, -0.318535)
+[node name="CSGBox3D5" type="CSGBox3D" parent="Areas/TheCells/StartingCell"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 6.74151, -0.889843)
 use_collision = true
-size = Vector3(9.78666, 1, 8.8759)
+size = Vector3(9.78666, 1, 10.0185)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="Areas/StartingCell"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="Areas/TheCells/StartingCell"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79472, 3.35762, -0.324463)
 use_collision = true
 size = Vector3(1, 7.71524, 8.83643)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="Areas/StartingCell"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="Areas/TheCells/StartingCell"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92075, 3.36569, -0.324463)
 use_collision = true
 size = Vector3(1, 7.73138, 8.83643)
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="Areas/StartingCell"]
+[node name="CSGBox3D4" type="CSGBox3D" parent="Areas/TheCells/StartingCell"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445673, 3.37473, 4.699)
 use_collision = true
 size = Vector3(11.7104, 7.74945, 1.22437)
 
-[node name="CSGBox3D6" type="CSGBox3D" parent="Areas/StartingCell"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445673, 3.37473, -5.29529)
+[node name="CSGBox3D6" type="CSGBox3D" parent="Areas/TheCells/StartingCell"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54931, 3.37473, -5.29529)
 use_collision = true
-size = Vector3(11.7104, 7.74945, 1.22437)
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Areas/TheCells/StartingCell"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64707, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Areas/TheCells/StartingCell"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
+light_color = Color(1, 0.900909, 0.708488, 1)
+light_energy = 0.391
+omni_range = 10.2
