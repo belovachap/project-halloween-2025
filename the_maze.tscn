@@ -69,3 +69,275 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
 light_color = Color(1, 0.900909, 0.708488, 1)
 light_energy = 0.391
 omni_range = 10.2
+
+[node name="StartingCell2" type="Node3D" parent="Areas/TheCells"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.1249, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 0, -0.891552)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0219)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 6.74151, -0.889843)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0185)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79472, 3.35762, -0.324463)
+use_collision = true
+size = Vector3(1, 7.71524, 8.83643)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92075, 3.36569, -0.324463)
+use_collision = true
+size = Vector3(1, 7.73138, 8.83643)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445673, 3.37473, 4.699)
+use_collision = true
+size = Vector3(11.7104, 7.74945, 1.22437)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54931, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64707, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Areas/TheCells/StartingCell2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
+light_color = Color(1, 0.900909, 0.708488, 1)
+light_energy = 0.391
+omni_range = 10.2
+
+[node name="StartingCell3" type="Node3D" parent="Areas/TheCells"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.9349, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 0, -0.891552)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0219)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 6.74151, -0.889843)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0185)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79472, 3.35762, -0.324463)
+use_collision = true
+size = Vector3(1, 7.71524, 8.83643)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92075, 3.36569, -0.324463)
+use_collision = true
+size = Vector3(1, 7.73138, 8.83643)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445673, 3.37473, 4.699)
+use_collision = true
+size = Vector3(11.7104, 7.74945, 1.22437)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54931, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64707, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Areas/TheCells/StartingCell3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
+light_color = Color(1, 0.900909, 0.708488, 1)
+light_energy = 0.391
+omni_range = 10.2
+
+[node name="StartingCell4" type="Node3D" parent="Areas/TheCells"]
+transform = Transform3D(-0.999944, 0, -0.0105764, 0, 1, 0, 0.0105764, 0, -0.999944, -19.9349, 0, -21.5653)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 0, -0.891552)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0219)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 6.74151, -0.889843)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0185)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79472, 3.35762, -0.324463)
+use_collision = true
+size = Vector3(1, 7.71524, 8.83643)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92075, 3.36569, -0.324463)
+use_collision = true
+size = Vector3(1, 7.73138, 8.83643)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445673, 3.37473, 4.699)
+use_collision = true
+size = Vector3(11.7104, 7.74945, 1.22437)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54931, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64707, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Areas/TheCells/StartingCell4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
+light_color = Color(1, 0.900909, 0.708488, 1)
+light_energy = 0.391
+omni_range = 10.2
+
+[node name="StartingCell5" type="Node3D" parent="Areas/TheCells"]
+transform = Transform3D(-0.999944, 0, -0.0105764, 0, 1, 0, 0.0105764, 0, -0.999944, 1.10145, 0, -21.5653)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 0, -0.891552)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0219)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 6.74151, -0.889843)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0185)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79472, 3.35762, -0.324463)
+use_collision = true
+size = Vector3(1, 7.71524, 8.83643)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92075, 3.36569, -0.324463)
+use_collision = true
+size = Vector3(1, 7.73138, 8.83643)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445673, 3.37473, 4.699)
+use_collision = true
+size = Vector3(11.7104, 7.74945, 1.22437)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54931, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64707, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Areas/TheCells/StartingCell5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
+light_color = Color(1, 0.900909, 0.708488, 1)
+light_energy = 0.391
+omni_range = 10.2
+
+[node name="StartingCell6" type="Node3D" parent="Areas/TheCells"]
+transform = Transform3D(-0.999944, 0, -0.0105764, 0, 1, 0, 0.0105764, 0, -0.999944, 19.7304, 0, -21.5653)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 0, -0.891552)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0219)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.420284, 6.74151, -0.889843)
+use_collision = true
+size = Vector3(9.78666, 1, 10.0185)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79472, 3.35762, -0.324463)
+use_collision = true
+size = Vector3(1, 7.71524, 8.83643)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92075, 3.36569, -0.324463)
+use_collision = true
+size = Vector3(1, 7.73138, 8.83643)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.445673, 3.37473, 4.699)
+use_collision = true
+size = Vector3(11.7104, 7.74945, 1.22437)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54931, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64707, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(3.50317, 7.74945, 1.22437)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Areas/TheCells/StartingCell6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
+light_color = Color(1, 0.900909, 0.708488, 1)
+light_energy = 0.391
+omni_range = 10.2
+
+[node name="Hallway" type="Node3D" parent="Areas/TheCells"]
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.564088, 0, -10.9165)
+use_collision = true
+size = Vector3(65.4683, 1, 10.0219)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.564088, 6.75793, -10.9165)
+use_collision = true
+size = Vector3(65.4683, 1, 10.0219)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3756, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(7.8263, 7.74945, 1.22437)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.199, 3.37473, -16.4823)
+use_collision = true
+size = Vector3(8.17958, 7.74945, 1.22437)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.91711, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(7.8263, 7.74945, 1.22437)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.51084, 3.37473, -5.29529)
+use_collision = true
+size = Vector3(8.30937, 7.74945, 1.22437)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.76178, 3.37473, -16.4286)
+use_collision = true
+size = Vector3(9.70417, 7.74945, 1.22437)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1677, 3.37473, -16.4286)
+use_collision = true
+size = Vector3(6.07767, 7.74945, 1.22437)
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.6413, 3.37473, -5.40462)
+use_collision = true
+size = Vector3(7.00161, 7.74945, 1.22437)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Areas/TheCells/Hallway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2027, 3.37473, -16.4286)
+use_collision = true
+size = Vector3(9.70417, 7.74945, 1.22437)
