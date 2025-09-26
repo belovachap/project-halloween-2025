@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0my1h4qhd7a0"]
+
+[ext_resource type="Script" uid="uid://bekdc7kshgddw" path="res://camera.gd" id="1_u5kg4"]
+
+[node name="Camera" type="Node3D"]
+script = ExtResource("1_u5kg4")
+
+[node name="Flash" type="SpotLight3D" parent="."]
+visible = false
+light_energy = 10.143
+spot_range = 30.92
+spot_angle = 53.57
+spot_angle_attenuation = 2.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
