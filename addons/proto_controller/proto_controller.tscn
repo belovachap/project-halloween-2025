@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bs72ogkvdd7d6"]
+[gd_scene load_steps=7 format=3 uid="uid://bs72ogkvdd7d6"]
 
-[ext_resource type="Script" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="Script" uid="uid://b1jtsqcgb2vlf" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="AudioStream" uid="uid://f71vndr3mty" path="res://assets/sounds/footsteps/Steps_floor-017.ogg" id="2_5hfox"]
+[ext_resource type="PackedScene" uid="uid://d0my1h4qhd7a0" path="res://camera.tscn" id="2_6dqce"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -29,4 +31,18 @@ shape = SubResource("CapsuleShape3D_iof21")
 [node name="Head" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
+[node name="Camera" parent="Head" instance=ExtResource("2_6dqce")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.01466)
+
 [node name="Camera3D" type="Camera3D" parent="Head"]
+
+[node name="AudioListener3D" type="AudioListener3D" parent="Head"]
+
+[node name="FootstepAudio" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_5hfox")
+
+[node name="FootstepCooldownTimer" type="Timer" parent="."]
+wait_time = 0.45
+one_shot = true
+
+[connection signal="timeout" from="FootstepCooldownTimer" to="." method="_on_footstep_cooldown_timer_timeout"]

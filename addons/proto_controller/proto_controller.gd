@@ -48,6 +48,7 @@ var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
 var freeflying : bool = false
+var footstep_sounds
 
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
@@ -57,6 +58,30 @@ func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
 	look_rotation.x = head.rotation.x
+
+	footstep_sounds = [
+		preload("res://assets/sounds/footsteps/Steps_floor-001.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-002.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-003.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-004.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-005.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-006.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-007.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-008.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-009.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-010.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-011.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-012.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-013.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-014.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-015.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-016.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-017.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-018.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-019.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-020.ogg"),
+		preload("res://assets/sounds/footsteps/Steps_floor-021.ogg"),
+	]
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
@@ -111,6 +136,10 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = move_toward(velocity.x, 0, move_speed)
 			velocity.z = move_toward(velocity.z, 0, move_speed)
+
+		if abs(velocity.x) > 0 || abs(velocity.z) > 0:
+			play_footstep_sound()
+
 	else:
 		velocity.x = 0
 		velocity.y = 0
@@ -176,3 +205,18 @@ func check_input_mappings():
 	if can_freefly and not InputMap.has_action(input_freefly):
 		push_error("Freefly disabled. No InputAction found for input_freefly: " + input_freefly)
 		can_freefly = false
+
+var footstep_cooldown : bool = false
+func play_footstep_sound() -> void:
+	if footstep_cooldown:
+		return
+
+	var random_index = randi() % footstep_sounds.size()
+	$FootstepAudio.stream = footstep_sounds[random_index]
+	$FootstepAudio.play()
+
+	footstep_cooldown = true
+	$FootstepCooldownTimer.start()
+
+func _on_footstep_cooldown_timer_timeout() -> void:
+	footstep_cooldown = false

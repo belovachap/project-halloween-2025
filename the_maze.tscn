@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://ctyd42l41f4uo"]
+[gd_scene load_steps=5 format=3 uid="uid://ctyd42l41f4uo"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_ec1n3"]
-[ext_resource type="PackedScene" uid="uid://d0my1h4qhd7a0" path="res://camera.tscn" id="2_o6y5j"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6y5j"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -23,9 +22,6 @@ environment = SubResource("Environment_vgtbh")
 
 [node name="ProtoController" parent="." instance=ExtResource("1_ec1n3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.02384, 0.411391, 2.97795)
-
-[node name="Camera" parent="ProtoController" instance=ExtResource("2_o6y5j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0381749, 1.38573, -0.859855)
 
 [node name="Areas" type="Node3D" parent="."]
 
