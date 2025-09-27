@@ -42,7 +42,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.01466)
 stream = ExtResource("2_5hfox")
 
 [node name="FootstepCooldownTimer" type="Timer" parent="."]
-wait_time = 0.45
+wait_time = 0.4
 one_shot = true
 
 [connection signal="timeout" from="FootstepCooldownTimer" to="." method="_on_footstep_cooldown_timer_timeout"]
