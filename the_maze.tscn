@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://ctyd42l41f4uo"]
+[gd_scene load_steps=7 format=3 uid="uid://ctyd42l41f4uo"]
 
+[ext_resource type="Script" uid="uid://hma55ubteeac" path="res://the_maze.gd" id="1_5eyc2"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_ec1n3"]
 [ext_resource type="PackedScene" uid="uid://fqpyygyfub8x" path="res://monster.tscn" id="2_o6y5j"]
 
@@ -17,6 +18,7 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="TheMaze" type="Node3D"]
+script = ExtResource("1_5eyc2")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_vgtbh")
@@ -244,14 +246,14 @@ use_collision = true
 size = Vector3(11.7104, 7.74945, 1.22437)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54931, 3.37473, -5.29529)
+transform = Transform3D(1, 0, -3.44589e-08, 0, 1, 0, 3.44589e-08, 0, 1, 4.98754, 3.37473, -5.29529)
 use_collision = true
-size = Vector3(3.50317, 7.74945, 1.22437)
+size = Vector3(4.37964, 7.74945, 1.22437)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="Areas/TheCells/StartingCell5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64707, 3.37473, -5.29529)
+transform = Transform3D(1, 0, -8.84756e-08, 0, 1, 0, 8.84756e-08, 0, 1, -3.95585, 3.37473, -5.29529)
 use_collision = true
-size = Vector3(3.50317, 7.74945, 1.22437)
+size = Vector3(4.12073, 7.74945, 1.22437)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Areas/TheCells/StartingCell5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
