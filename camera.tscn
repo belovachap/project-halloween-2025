@@ -13,6 +13,8 @@ spot_range = 30.92
 spot_angle = 53.57
 spot_angle_attenuation = 2.0
 
+[node name="RayCast3D" type="RayCast3D" parent="Flash"]
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2
 one_shot = true

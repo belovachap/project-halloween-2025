@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctyd42l41f4uo"]
+[gd_scene load_steps=6 format=3 uid="uid://ctyd42l41f4uo"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_ec1n3"]
+[ext_resource type="PackedScene" uid="uid://fqpyygyfub8x" path="res://monster.tscn" id="2_o6y5j"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6y5j"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -114,6 +115,10 @@ light_color = Color(1, 0.900909, 0.708488, 1)
 light_energy = 0.391
 omni_range = 10.2
 
+[node name="Monster" parent="Areas/TheCells/StartingCell2" node_paths=PackedStringArray("player") instance=ExtResource("2_o6y5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.597385, 0)
+player = NodePath("../../../../ProtoController")
+
 [node name="StartingCell3" type="Node3D" parent="Areas/TheCells"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.9349, 0, 0)
 
@@ -157,6 +162,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
 light_color = Color(1, 0.900909, 0.708488, 1)
 light_energy = 0.391
 omni_range = 10.2
+
+[node name="Monster" parent="Areas/TheCells/StartingCell3" node_paths=PackedStringArray("player") instance=ExtResource("2_o6y5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.545205, 0)
+player = NodePath("../../../../ProtoController")
 
 [node name="StartingCell4" type="Node3D" parent="Areas/TheCells"]
 transform = Transform3D(-0.999944, 0, -0.0105764, 0, 1, 0, 0.0105764, 0, -0.999944, -19.9349, 0, -21.5653)
@@ -202,6 +211,10 @@ light_color = Color(1, 0.900909, 0.708488, 1)
 light_energy = 0.391
 omni_range = 10.2
 
+[node name="Monster" parent="Areas/TheCells/StartingCell4" node_paths=PackedStringArray("player") instance=ExtResource("2_o6y5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.461893, 0)
+player = NodePath("../../../../ProtoController")
+
 [node name="StartingCell5" type="Node3D" parent="Areas/TheCells"]
 transform = Transform3D(-0.999944, 0, -0.0105764, 0, 1, 0, 0.0105764, 0, -0.999944, 1.10145, 0, -21.5653)
 
@@ -246,6 +259,10 @@ light_color = Color(1, 0.900909, 0.708488, 1)
 light_energy = 0.391
 omni_range = 10.2
 
+[node name="Monster" parent="Areas/TheCells/StartingCell5" node_paths=PackedStringArray("player") instance=ExtResource("2_o6y5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.486297, 0)
+player = NodePath("../../../../ProtoController")
+
 [node name="StartingCell6" type="Node3D" parent="Areas/TheCells"]
 transform = Transform3D(-0.999944, 0, -0.0105764, 0, 1, 0, 0.0105764, 0, -0.999944, 19.7304, 0, -21.5653)
 
@@ -289,6 +306,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65285, 0)
 light_color = Color(1, 0.900909, 0.708488, 1)
 light_energy = 0.391
 omni_range = 10.2
+
+[node name="Monster" parent="Areas/TheCells/StartingCell6" node_paths=PackedStringArray("player") instance=ExtResource("2_o6y5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.561155, 0)
+player = NodePath("../../../../ProtoController")
 
 [node name="Hallway" type="Node3D" parent="Areas/TheCells"]
 
