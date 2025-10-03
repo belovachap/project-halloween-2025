@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d0my1h4qhd7a0"]
 
-[ext_resource type="Script" uid="uid://bekdc7kshgddw" path="res://camera.gd" id="1_u5kg4"]
+[ext_resource type="Script" uid="uid://bekdc7kshgddw" path="res://scripts/camera.gd" id="1_u5kg4"]
 [ext_resource type="AudioStream" uid="uid://ekdpbt2vsv34" path="res://assets/sounds/camera.ogg" id="2_diie0"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_diie0"]

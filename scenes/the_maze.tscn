@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctyd42l41f4uo"]
 
-[ext_resource type="Script" uid="uid://hma55ubteeac" path="res://the_maze.gd" id="1_5eyc2"]
+[ext_resource type="Script" uid="uid://hma55ubteeac" path="res://scripts/the_maze.gd" id="1_5eyc2"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_ec1n3"]
-[ext_resource type="PackedScene" uid="uid://fqpyygyfub8x" path="res://monster.tscn" id="2_o6y5j"]
+[ext_resource type="PackedScene" uid="uid://fqpyygyfub8x" path="res://scenes/monster.tscn" id="2_o6y5j"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6y5j"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://fqpyygyfub8x"]
 
-[ext_resource type="Script" uid="uid://d2w35jjs7bw6j" path="res://monster.gd" id="1_s3gyj"]
+[ext_resource type="Script" uid="uid://d2w35jjs7bw6j" path="res://scripts/monster.gd" id="1_s3gyj"]
 [ext_resource type="AudioStream" uid="uid://cptn0hultkca4" path="res://assets/sounds/spooky-scary-sound-410563.mp3" id="2_mrqeg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c5q2p"]

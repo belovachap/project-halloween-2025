@@ -14,6 +14,8 @@ func _process(delta: float) -> void:
 				# Process the collision information
 				#print("Collision detected:")
 				#print("  Collider: ", collider.name)
+				
+				# if the monster is in range of the camera flash
 				if collider.name == "Monster":
 					collider.hit_by_flash()
 

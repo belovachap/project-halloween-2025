@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b1jtsqcgb2vlf" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="AudioStream" uid="uid://f71vndr3mty" path="res://assets/sounds/footsteps/Steps_floor-017.ogg" id="2_5hfox"]
-[ext_resource type="PackedScene" uid="uid://d0my1h4qhd7a0" path="res://camera.tscn" id="2_6dqce"]
+[ext_resource type="PackedScene" uid="uid://d0my1h4qhd7a0" path="res://scenes/camera.tscn" id="2_6dqce"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)

@@ -12,9 +12,13 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if angered:
-		# needs to persue the player
+		# TODO:
+		# Needs to pursue the player
 		pass
 	else:
+		# Enters wander state
+		# TODO:
+		# Maybe have the monster detect walls to make sure it doesn't slide against any?
 		var direction := (transform.basis * Vector3(randf_range(-0.1, 0.1), 0, randf_range(-0.1, 0.1))).normalized()
 		if direction:
 			velocity.x = direction.x * SPEED
@@ -25,6 +29,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+# When monster is hit by the player's camera flash
 func hit_by_flash() -> void:
 	$AudioStreamPlayer3D.play()
 	angered = true
