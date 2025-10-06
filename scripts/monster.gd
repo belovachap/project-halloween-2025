@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const SPEED = 5.0
+const SPEED = 10.0
 var angered : bool = false
 @export var player : CharacterBody3D
 
@@ -12,28 +12,22 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if angered:
-		# TODO:
-		# Needs to pursue the player
-		pass
+		var direction = (player.global_position - global_position)
+		velocity = direction.normalized() * SPEED
 	else:
-		# Enters wander state
-		# TODO:
-		# Maybe have the monster detect walls to make sure it doesn't slide against any?
-		var direction := (transform.basis * Vector3(randf_range(-0.1, 0.1), 0, randf_range(-0.1, 0.1))).normalized()
-		if direction:
-			velocity.x = direction.x * SPEED
-			velocity.z = direction.z * SPEED
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-			velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity = Vector3.ZERO
 
 	move_and_slide()
 
 # When monster is hit by the player's camera flash
 func hit_by_flash() -> void:
-	$AudioStreamPlayer3D.play()
+	if not $AudioStreamPlayer3D.playing:
+		$AudioStreamPlayer3D.play()
+
+	%MeshInstance3D.mesh.material.emission_enabled = true
 	angered = true
 	$AngerCooldownTimer.start()
 
 func _on_anger_cooldown_timer_timeout() -> void:
+	%MeshInstance3D.mesh.material.emission_enabled = false
 	angered = false

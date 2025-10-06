@@ -6,6 +6,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c5q2p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s3gyj"]
+emission = Color(1, 0, 0, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_mrqeg"]
 material = SubResource("StandardMaterial3D_s3gyj")
@@ -18,13 +19,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00816, 0)
 shape = SubResource("CapsuleShape3D_c5q2p")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+unique_name_in_owner = true
 mesh = SubResource("CapsuleMesh_mrqeg")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("2_mrqeg")
 
 [node name="AngerCooldownTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 one_shot = true
 
 [connection signal="timeout" from="AngerCooldownTimer" to="." method="_on_anger_cooldown_timer_timeout"]
